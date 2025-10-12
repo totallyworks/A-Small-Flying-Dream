@@ -10,6 +10,7 @@ The CAD model was designed in Onshape, and simulations were done primarily in XF
 
 The table below shows the main wing parameters.
 
+
 | Parameter        | Value       |
 | ---------------- | ----------- |
 | Airfoil          | Curtis C-72 |
@@ -19,10 +20,13 @@ The table below shows the main wing parameters.
 | AoI at wing root | 3°          |
 | AoI at wingtip   | 1°          |
 | Dihedral         | 3.5°        |
+
 The ailerons are rectangular, with a width equal to 20% of the wing chord and a length equal to 40% of the half-span. They are positioned such that there is an 80 mm gap between the aileron and the wingtip.
 
 The horizontal and vertical stabilizers are made from 5 mm foam board, both with a taper ratio of 0.5. Their exact dimensions are shown in the schematic below:
-![[tailDimension.png]]
+
+![](docs/tailDimension.png)
+
 The total length of the aircraft is 800 mm and weighs a little over 1 kg. Additional weight was added to the tail to move the CG rearward, as the plane was initially too nose-heavy.
 
 ## Design and Materials
@@ -55,7 +59,7 @@ Airspeed sensor: AUAV MS4525 R01 module
 
 SD card: generic SPI microSD card adapter
 
-[[Schematic_Drone-FC.png]]
+[Schematic](docs/Schematic_Drone-FC.png)
 
 ## Transmitter
 
@@ -74,7 +78,7 @@ The controller has two radio modules: E01-ML01DP5 for a radio link with the airp
 
 ## Software
 
-The firmware is coded in C++ using the Arduino framework in PlatformIO. It uses third-party libraries for communicating with sensors, controlling servos, and saving data. A basic flowchart of the control loop can be seen [[SoftwareFlowchart-1.png|here]].
+The firmware is coded in C++ using the Arduino framework in PlatformIO. It uses third-party libraries for communicating with sensors, controlling servos, and saving data. A basic flowchart of the control loop can be seen [here](docs/SoftwareFlowchart-1.png).
 
 A data packet received from the transmitter consists of either 3 or 8 bytes. When 3 bytes are received, each byte represents the position of one control stick. Otherwise, the 8 bytes make up a command. Each of the 8 bytes in a command represents a character. A full list of commands can be seen [here](docs/Commands.md). 
 
@@ -92,7 +96,7 @@ The Ground Station App features:
 
 In order to start the app, the telemetry receiver must be connected to a computer. The telemetry is received using an HC-12 radio module and  an ESP32 development board, which writes the data to a serial port. The Ground Station App is able to read and process this data for display. When GPS telemetry data is available, the app displays the position of the aircraft on a map. However, the map of the flight area needs to be downloaded before starting the app. 
 
-List of telemetry variables can be seen [[Telemetry variables|here]].
+List of telemetry variables can be seen [here](docs/Commands.md).
 
 ## Conclusion
 
