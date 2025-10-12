@@ -1,0 +1,19 @@
+Below is a full list of telemetry variables:
+- airspeed
+- battery voltage
+- time since last data from transmitter
+- roll
+- pitch
+- roll setpoint
+- pitch setpoint
+- altitude
+- latitude
+- longitude
+- groundspeed
+- number of satellites seen by the GPS receiver
+- number of commands received
+- throttle
+- elevator position
+- aileron/rudder positions
+- state of airspeed, GPS, IMU, SD card and barometer modules
+- which flight mode is turned on
