@@ -76,7 +76,7 @@ The controller has two radio modules: E01-ML01DP5 for a radio link with the airp
 
 The firmware is coded in C++ using the Arduino framework in PlatformIO. It uses third-party libraries for communicating with sensors, controlling servos, and saving data. A basic flowchart of the control loop can be seen [[SoftwareFlowchart-1.png|here]].
 
-A data packet received from the transmitter consists of either 3 or 8 bytes. When 3 bytes are received, each byte represents the position of one control stick. Otherwise, the 8 bytes make up a command. Each of the 8 bytes in a command represents a character. A full list of commands can be seen [[Commands|here]]. 
+A data packet received from the transmitter consists of either 3 or 8 bytes. When 3 bytes are received, each byte represents the position of one control stick. Otherwise, the 8 bytes make up a command. Each of the 8 bytes in a command represents a character. A full list of commands can be seen [here](docs/Commands.md). 
 
 Altitude, airspeed, air temperature, and battery voltage are passed through a low-pass filter for smoothing. Roll Stabilization, Pitch Stabilization, and Altitude Hold modes use PID control loops to minimize oscillations. Altitude Hold mode is coded but not yet fully tested.
 
