@@ -1,7 +1,11 @@
 S - positive/negative
+
 XXX - value of the command
+
 Last character of the command - #
+
 B - boolean value of the command
+
 
 | Command  | Description                                                          |
 | -------- | -------------------------------------------------------------------- |
