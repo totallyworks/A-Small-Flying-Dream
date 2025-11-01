@@ -98,7 +98,7 @@ The Ground Station App features:
 
 In order to start the app, the telemetry receiver must be connected to a computer. The telemetry is received using an HC-12 radio module and  an ESP32 development board, which writes the data to a serial port. The Ground Station App is able to read and process this data for display. When GPS telemetry data is available, the app displays the position of the aircraft on a map. However, the map of the flight area needs to be downloaded before starting the app. 
 
-List of telemetry variables can be seen [here](docs/Commands.md).
+List of telemetry variables can be seen [here](docs/Telemetryvaribles.md).
 
 ## Conclusion
 
