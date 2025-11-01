@@ -6,6 +6,8 @@ The final version of the project includes four parts: the aircraft, the radio tr
 
 The CAD model was designed in Onshape, and simulations were done primarily in XFLR5.
 
+![](docs/droneimg.JPG)
+
 ## Dimensions
 
 The table below shows the main wing parameters.
